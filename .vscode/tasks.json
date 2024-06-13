@@ -4,14 +4,14 @@
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-            "args": [
+            "args": [             //if you want to use this, please change the paths of everything here
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "-I",
-                "C:/Users/vivek/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Qt/include", // Path to Qt's include directory
+                "C:/Users/vivek/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Qt/include", 
                 "-I",
                 "C:/Coding Libraries/C++ Libraries/eigen-3.4.0",
                 "-I",

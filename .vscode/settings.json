@@ -1,0 +1,10 @@
+{
+    "cmake.generator": "Ninja",
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.sourceDirectory": "F:/random code stuff/minesweeper/minesweeper/.vscode",
+    "cmake.environment": {
+        "PATH": "C:/Path/To/Your/MinGW/bin;${env:PATH}"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+}

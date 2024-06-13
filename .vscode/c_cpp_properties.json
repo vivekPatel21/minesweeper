@@ -2,12 +2,13 @@
     "configurations": [
         {
             "name": "Win32",
+            //if you want to use this, please change the paths of everything here
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/Coding Libraries/C++ Libraries/eigen-3.4.0",
                 "C:/Coding Libraries/C++ Libraries/stb_image",
                 "C:/Coding Libraries/C++ Libraries/glfw-3.4/include",
-                "C:/Users/vivek/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Qt"
+                "C:/Users/vivek/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Qt/include" 
             ],
             "defines": [
                 "_DEBUG",
