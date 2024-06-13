@@ -16,10 +16,9 @@ namespace GameSpace {
                 return(this->x+1 == other.x && this->y == other.y) ||
                 (this->x-1 == other.x && this->y == other.y) ||
                 (this->x == other.x && this->y-1 == other.y) ||
-                (this->x == other.x && this->y+1 == other.y) ||
-                checkDiag(other);
+                (this->x == other.x && this->y+1 == other.y);
             }
-        private:
+        public:
             bool checkDiag(Coord other){
                 return(this->x+1 == other.x && this->y+1 == other.y) ||
                 (this->x+1 == other.x && this->y-1 == other.y) ||
@@ -30,6 +29,5 @@ namespace GameSpace {
             bool isEqual(Coord other){
                 return(this->x == other.x && this->y == other.y);
             }
-
     };
 }
