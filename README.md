@@ -1,2 +1,2 @@
-# minesweeper
-a game of minesweeper I made
+# Mine Sweeper
+A game of minesweeper I made
