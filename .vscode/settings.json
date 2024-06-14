@@ -2,9 +2,9 @@
     "cmake.generator": "Ninja",
     "cmake.configureOnOpen": true,
     "cmake.buildDirectory": "${workspaceFolder}/build",
-    "cmake.sourceDirectory": "F:/random code stuff/minesweeper/minesweeper/.vscode",
+    "cmake.sourceDirectory": "${workspaceFolder}",
     "cmake.environment": {
-        "PATH": "C:/Path/To/Your/MinGW/bin;${env:PATH}"
+        "PATH": "C:/msys64/ucrt64/bin;${env:PATH}"
     },
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }

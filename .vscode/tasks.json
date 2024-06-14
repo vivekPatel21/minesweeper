@@ -4,20 +4,21 @@
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-            "args": [             //if you want to use this, please change the paths of everything here
+            "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-I",
-                "C:/Users/vivek/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Qt/include", 
-                "-I",
-                "C:/Coding Libraries/C++ Libraries/eigen-3.4.0",
-                "-I",
-                "C:/Coding Libraries/C++ Libraries/stb_image",
-                "-I",
-                "C:/Coding Libraries/C++ Libraries/glfw-3.4/include"
+                "-I", "C:/Coding Libraries/C++ Libraries/eigen-3.4.0",
+                "-I", "C:/Coding Libraries/C++ Libraries/stb_image",
+                "-I", "C:/Coding Libraries/C++ Libraries/glfw-3.4/include",
+                "-I", "C:/Coding Libraries/C++ Libraries/SDL-main/include",
+                "-L", "C:/Coding Libraries/C++ Libraries/glfw-3.4/lib",
+                "-L", "C:/Coding Libraries/C++ Libraries/SDL-main/lib",
+                "-lglfw3",
+                "-lSDL2",
+                "-lopengl32"
             ],
             "options": {
                 "cwd": "C:\\msys64\\ucrt64\\bin"
