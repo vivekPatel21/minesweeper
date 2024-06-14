@@ -1,0 +1,12 @@
+{
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.preferredGenerators": [
+      "MinGW Makefiles",
+      "Visual Studio 17 2022"
+    ],
+    "cmake.cmakePath": "C:\\Program Files\\CMake\\bin\\cmake.exe",
+    "cmake.configureSettings": {
+      "CMAKE_MAKE_PROGRAM": "C:\\msys64\\ucrt64\\bin\\mingw32-make.exe"
+    },
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}\\build\\compile_commands.json"
+  }
