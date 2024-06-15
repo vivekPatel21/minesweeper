@@ -20,4 +20,7 @@
 
 int main(int, char**){
     printf("Hello, from Minesweeper!\n");
+    
+
+
 }
