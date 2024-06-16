@@ -1,29 +1,18 @@
-#ifndef BOARD
+#ifndef BOARD_H
 #define BOARD_H
 
-
+#include <vector>
 #include "coord.h"
-#include <Eigen/Dense>
 
+class Board {
+public:
+    Board(int size);
 
-#define EASYBOARDSIZE 9
-#define NOMRALBOARDSIZE 11
-#define HARDMODESIZE 13
-#define BOARDMAX 50
+private:
+    int size;
+    std::vector<coord> coordinates;
 
-#define CUSTOMMAX .3 //Max Number of bombs that can be on a board.
-
-
-enum CellState {
-    HIDDEN,
-    REVEALED,
-    FLAGGED
+    void createCoords();
 };
 
-struct Cell {
-    bool hasMine; 
-    int adjMines;
-    CellState state;
-};
-
-#endif //BOARD_H
+#endif // BOARD_H
