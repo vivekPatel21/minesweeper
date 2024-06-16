@@ -19,8 +19,5 @@
 #include <oaidl.h>
 
 int main(int, char**){
-    printf("Hello, from Minesweeper!\n");
     
-
-
 }

@@ -1,50 +1,35 @@
 // coord.h
-#ifndef Coord
+#ifndef COORD_H
 #define COORD_H
 
-enum class CellState {
-    HIDDEN,
-    REVEALED,
-    FLAGGED
-};
-
-struct Cell {
-    bool hasMine; 
-    int adjMines;
-    CellState state;
-};
+#include <iostream>
 
 class coord {
-    int x;
-    int y;
-    Cell state;
-
 public:
-    coord(int x, int y) : x(x), y(y) {}
+    double x, y;
 
-    bool checkAdj(const coord& other) const{
-        return(this->x == other.x && (this->y+1 == other.y || this->y-1 == other.y)) ||
-        (this->y == other.y && (this->x+1 == other.x || this->x-1 == other.x));
-    }
-    bool checkDiag(const coord& other) const{
-        return (this->x+1 == other.x && this->y ==other.y) ||
-        (this->x-1 == other.x && this->y-1 == other.y) ||
-        (this->x+1 == other.x && this->y-1 == other.y) ||
-        (this->x-1 == other.x && this->y+1 == other.y);
-    }
-    bool equals(const coord& other) const{
-        return (this->x == other.x && this->y == other.y);
+    coord() : x(0), y(0) {}
+    coord(double x, double y) : x(x), y(y) {}
+
+    coord operator+(const coord& other) const {
+        return coord(x + other.x, y + other.y);
     }
 
-    //methods below are inter-twined with the board class.
-    void setState()const{
-        //TODO
+    coord operator-(const coord& other) const {
+        return coord(x - other.x, y - other.y);
     }
 
-private:
-    
-    int searchBombs()const{
-        //TODO
+    coord operator*(double scalar) const {
+        return coord(x * scalar, y * scalar);
+    }
+
+    coord operator/(double scalar) const {
+        return coord(x / scalar, y / scalar);
+    }
+
+    friend std::ostream& operator<<(std::ostream& os, const coord& c) {
+        os << "(" << c.x << ", " << c.y << ")";
+        return os;
     }
 };
 
