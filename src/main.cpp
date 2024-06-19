@@ -1,7 +1,4 @@
-#include <iostream>
-#include <GLFW/glfw3.h>
-#include <random>
-#include "gamespace/board.h"
+#include "main.h"
 
 // Window dimensions
 const GLuint WIDTH = 800, HEIGHT = 600;
@@ -84,5 +81,10 @@ void drawBoard(const Board& board, int size) {
             glVertex2f(x, y - cellHeight);
             glEnd();
         }
+    }
+
+    GLenum err;
+    while ((err = glGetError()) != GL_NO_ERROR) {
+        std::cerr << "OpenGL error: " << err << std::endl;
     }
 }
