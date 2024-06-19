@@ -14,7 +14,7 @@ public:
 
     void createCoords();
     void printBoard() const;
-    int bombsToPlace(float chosenDifficulty);
+    int bombsToPlace(float chosenDifficulty) const;
     void populateBoard(coord ignore, int numberToPlace);
     void setValues();
     int BFS(coord start);

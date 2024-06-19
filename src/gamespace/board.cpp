@@ -21,7 +21,7 @@ void Board::printBoard() const {
     }
 }
 
-int Board::bombsToPlace(float chosenDifficulty) {
+int Board::bombsToPlace(float chosenDifficulty)const {
     int numOfCoords = this->size * this->size;
     return static_cast<int>(numOfCoords * chosenDifficulty);
 }
